@@ -7,13 +7,14 @@
 <meta name="description" content="Crawford Machine in Titusville, PA makes heat-treated oil well slips and reins, repairs machinery, and machines CNC and lathe parts for manufacturers. Call 814-827-3427 for a quote.">
 <link rel="canonical" href="https://crawfordmachine.com/">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-512.png" type="image/png" sizes="512x512">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:title" content="Crawford Machine · Titusville, PA">
 <meta property="og:description" content="Oil well slips and reins, machine repair, CNC and lathe work. Family owned in Titusville, Pennsylvania.">
 <meta property="og:image" content="https://crawfordmachine.com/og-image.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Crawford Machine","telephone":"+1-814-827-3427","email":"cminc1@gmail.com","url":"https://crawfordmachine.com","logo":"https://crawfordmachine.com/og-image.png","address":{"@type":"PostalAddress","streetAddress":"486 Dutch Hill Road","addressLocality":"Titusville","addressRegion":"PA","postalCode":"16354","addressCountry":"US"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"16:00"},"foundingDate":"1950","description":"Machine shop making heat-treated oil well slips and reins, machine repair, and CNC and lathe parts for manufacturers."}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Crawford Machine","alternateName":"Crawford Machine and Repair","telephone":"+1-814-827-3427","email":"cminc1@gmail.com","url":"https://crawfordmachine.com","logo":"https://crawfordmachine.com/og-image.png","address":{"@type":"PostalAddress","streetAddress":"486 Dutch Hill Road","addressLocality":"Titusville","addressRegion":"PA","postalCode":"16354","addressCountry":"US"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"16:00"},"foundingDate":"1950","description":"Machine shop making heat-treated oil well slips and reins, machine repair, and CNC and lathe parts for manufacturers."}
 </script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -55,9 +56,9 @@ p{margin:0;max-width:62ch}
 
 /* header */
 header{border-bottom:1px solid var(--line);background:var(--bg)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px;flex-wrap:wrap}
 .brand{display:block;text-decoration:none}
-.brand img{height:52px;width:auto;display:block}
+.brand img{height:84px;width:auto;display:block}
 .brand .logo-light{display:var(--logo-light)}
 .brand .logo-dark{display:var(--logo-dark)}
 nav{display:flex;gap:22px;font-weight:600;font-size:15px;flex-wrap:wrap}
@@ -103,6 +104,13 @@ th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:upp
 td.m{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:14px}
 .tblwrap{overflow-x:auto}
 .note{font-size:14px;color:var(--ink-2);font-style:italic}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px;align-items:stretch}
+.gallery figure{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.gallery img{width:100%;height:100%;min-height:0;object-fit:cover;display:block;aspect-ratio:4/3;max-width:100%}
+.gallery figure:nth-child(2) img{aspect-ratio:3/4}
+.gallery figcaption{font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.04em}
 
 /* about */
 .about .grid2{grid-template-columns:1fr 1.2fr}
@@ -152,6 +160,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 @media (max-width:820px){
   .hero .wrap,.grid2,.about .grid2,.rfq .grid2,.proof .grid2{grid-template-columns:1fr;gap:32px}
   .services{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .gallery img,.gallery figure:nth-child(2) img{aspect-ratio:4/3}
+  .brand img{height:64px}
   .svc{border-right:0;border-bottom:1px solid var(--line)}
   .svc:last-child{border-bottom:0}
   form{grid-template-columns:1fr}
@@ -165,11 +176,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
 <header>
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Crawford Machine home"><img class="logo-light" src="logo.svg" alt="Crawford Machine" width="700" height="192"><img class="logo-dark" src="logo-reversed.svg" alt="" width="700" height="192"></a>
+    <a class="brand" href="#top" aria-label="Crawford Machine home"><img class="logo-light" src="badge.png" alt="Crawford Machine and Repair, Titusville, PA" width="1072" height="756"><img class="logo-dark" src="badge-reversed.png" alt="" width="1072" height="756"></a>
     <nav>
       <a href="#services">Services</a>
       <a href="#slips">Slips &amp; reins</a>
       <a href="#capabilities">Capabilities</a>
+      <a href="#work">Our work</a>
       <a href="#about">About</a>
       <a href="#quote">Request a quote</a>
     </nav>
@@ -294,6 +306,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   </div>
 </section>
 
+<section class="band" id="work">
+  <div class="wrap stack" style="gap:36px">
+    <div class="stack" style="gap:12px">
+      <div class="eyebrow">From the shop floor</div>
+      <h2>Fabrication, start to finish</h2>
+      <p>A welded structural steel frame, built from cut stock to a finished, squared assembly. The same hands that machine the parts weld the fabrication.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="fab-welding.jpg" alt="Welding a large steel frame on the shop floor with a Thermal Arc welder in the foreground" width="1400" height="1050" loading="lazy"><figcaption>Tacking and welding the frame</figcaption></figure>
+      <figure><img src="fab-frame.jpg" alt="Finished welded steel frame with drilled mounting holes" width="1050" height="1400" loading="lazy"><figcaption>Finished frame, ready for mounting hardware</figcaption></figure>
+      <figure><img src="mill.jpg" alt="End mill cutting a slot in a long steel bar" width="1200" height="900" loading="lazy"><figcaption>Slotting bar stock on the mill</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <section class="band about" id="about">
   <div class="wrap grid2">
     <figure class="portrait">
@@ -350,7 +377,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <footer>
   <div class="wrap">
     <span>© 2026 Crawford Machine · Titusville, Pennsylvania</span>
-    <span>Machining · Repair · Fabrication for the oil &amp; gas industry</span>
+    <span>Crawford Machine and Repair · Machining · Fabrication · Oil &amp; gas</span>
   </div>
 </footer>
 
