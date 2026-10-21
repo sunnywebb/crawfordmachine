@@ -6,24 +6,28 @@
 <title>Crawford Machine</title>
 <meta name="description" content="Crawford Machine in Titusville, PA makes heat-treated oil well slips and reins, repairs machinery, and machines CNC and lathe parts for manufacturers. Call 814-827-3427 for a quote.">
 <link rel="canonical" href="https://crawfordmachine.com/">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:title" content="Crawford Machine · Titusville, PA">
 <meta property="og:description" content="Oil well slips and reins, machine repair, CNC and lathe work. Family owned in Titusville, Pennsylvania.">
-<meta property="og:image" content="https://crawfordmachine.com/dad.jpg">
+<meta property="og:image" content="https://crawfordmachine.com/og-image.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Crawford Machine","telephone":"+1-814-827-3427","email":"cminc1@gmail.com","url":"https://crawfordmachine.com","address":{"@type":"PostalAddress","streetAddress":"486 Dutch Hill Road","addressLocality":"Titusville","addressRegion":"PA","postalCode":"16354","addressCountry":"US"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"16:00"},"foundingDate":"1950","description":"Machine shop making heat-treated oil well slips and reins, machine repair, and CNC and lathe parts for manufacturers."}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Crawford Machine","telephone":"+1-814-827-3427","email":"cminc1@gmail.com","url":"https://crawfordmachine.com","logo":"https://crawfordmachine.com/og-image.png","address":{"@type":"PostalAddress","streetAddress":"486 Dutch Hill Road","addressLocality":"Titusville","addressRegion":"PA","postalCode":"16354","addressCountry":"US"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"16:00"},"foundingDate":"1950","description":"Machine shop making heat-treated oil well slips and reins, machine repair, and CNC and lathe parts for manufacturers."}
 </script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: a shop traveler — flat full-width bands, hard edges, a single hazard-orange accent; content column 1080px, a mono "spec" face for numbers. */
 :root{
-  --bg:#f3f2ee;          /* unbleached shop paper */
+  --bg:#F4F2EE;          /* unbleached shop paper */
   --bg-2:#e6e4dd;        /* darker band */
-  --ink:#1c1e21;         /* graphite */
-  --ink-2:#55585e;       /* muted steel */
+  --ink:#1B2A3A;         /* graphite */
+  --ink-2:#5A6572;       /* muted steel */
   --line:#c9c7bf;
-  --steel:#2a2f36;       /* dark band */
+  --steel:#1B2A3A;       /* dark band */
   --steel-fg:#eceae4;
-  --accent:#2e7d4f;      /* machine-tag orange */
+  --accent:#2F7A4A;      /* logo green */
+  --logo-light:block; --logo-dark:none;
   --accent-fg:#ffffff;
   --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
   --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
@@ -31,10 +35,10 @@
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --bg:#1a1c1f; --bg-2:#22252a; --ink:#ebe9e3; --ink-2:#a7aab0; --line:#3a3e45;
-  --steel:#0f1114; --steel-fg:#ebe9e3; --accent:#4caf6e; --accent-fg:#141414; color-scheme:dark } }
+  --steel:#0f1114; --steel-fg:#ebe9e3; --accent:#7FC08F; --accent-fg:#1B2A3A; --logo-light:none; --logo-dark:block; color-scheme:dark } }
 :root[data-theme="dark"]{
   --bg:#1a1c1f; --bg-2:#22252a; --ink:#ebe9e3; --ink-2:#a7aab0; --line:#3a3e45;
-  --steel:#0f1114; --steel-fg:#ebe9e3; --accent:#4caf6e; --accent-fg:#141414; color-scheme:dark }
+  --steel:#0f1114; --steel-fg:#ebe9e3; --accent:#7FC08F; --accent-fg:#1B2A3A; --logo-light:none; --logo-dark:block; color-scheme:dark }
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;margin:0}
@@ -52,8 +56,10 @@ p{margin:0;max-width:62ch}
 /* header */
 header{border-bottom:1px solid var(--line);background:var(--bg)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:700;font-size:26px;text-transform:uppercase;text-decoration:none;letter-spacing:.02em}
-.brand .mark{width:34px;height:34px;background:var(--accent);color:var(--accent-fg);display:grid;place-items:center;font-size:20px;clip-path:polygon(0 0,100% 0,100% 75%,75% 100%,0 100%)}
+.brand{display:block;text-decoration:none}
+.brand img{height:52px;width:auto;display:block}
+.brand .logo-light{display:var(--logo-light)}
+.brand .logo-dark{display:var(--logo-dark)}
 nav{display:flex;gap:22px;font-weight:600;font-size:15px;flex-wrap:wrap}
 nav a{text-decoration:none;color:var(--ink-2)}
 nav a:hover,nav a:focus-visible{color:var(--ink)}
@@ -120,7 +126,7 @@ input:focus,textarea:focus,select:focus{border-color:var(--accent);outline:0}
 .contact .big{font-family:var(--display);font-size:34px;font-weight:700;letter-spacing:.02em}
 .contact small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8e939b;margin-bottom:2px}
 .toast{grid-column:1/-1;background:var(--accent);color:var(--accent-fg);padding:14px 16px;font-weight:600}
-.ph{background:rgba(46,125,79,.14);outline:1px dashed var(--accent);padding:0 4px}
+.ph{background:rgba(47,122,74,.14);outline:1px dashed var(--accent);padding:0 4px}
 
 /* photos */
 .photo{display:block;width:100%;height:auto;max-width:100%}
@@ -159,7 +165,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
 <header>
   <div class="wrap">
-    <a class="brand" href="#top"><span class="mark">C</span>Crawford Machine</a>
+    <a class="brand" href="#top" aria-label="Crawford Machine home"><img class="logo-light" src="logo.svg" alt="Crawford Machine" width="700" height="192"><img class="logo-dark" src="logo-reversed.svg" alt="" width="700" height="192"></a>
     <nav>
       <a href="#services">Services</a>
       <a href="#slips">Slips &amp; reins</a>
