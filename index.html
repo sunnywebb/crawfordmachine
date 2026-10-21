@@ -109,10 +109,9 @@ td.m{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:14px}
 .note{font-size:14px;color:var(--ink-2);font-style:italic}
 
 /* gallery */
-.gallery{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px;align-items:stretch}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
 .gallery figure{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
 .gallery img{width:100%;height:100%;min-height:0;object-fit:cover;display:block;aspect-ratio:4/3;max-width:100%}
-.gallery figure:nth-child(2) img{aspect-ratio:3/4}
 .gallery figcaption{font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.04em}
 
 /* about */
@@ -161,6 +160,9 @@ input:focus,textarea:focus,select:focus{border-color:var(--accent);outline:0}
 .portrait figcaption{font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.04em}
 .proof{background:var(--bg-2)}
 .proof .grid2{grid-template-columns:1.2fr 1fr}
+.slipfig{margin:0;display:flex;flex-direction:column;gap:8px}
+.slipfig img{width:100%;height:auto;display:block;max-width:100%}
+.slipfig figcaption{font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.04em}
 .proof ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
 .phone{color:inherit;text-decoration:none}
 
@@ -172,7 +174,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   .hero .wrap,.grid2,.about .grid2,.rfq .grid2,.proof .grid2{grid-template-columns:1fr;gap:32px}
   .services{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr}
-  .gallery img,.gallery figure:nth-child(2) img{aspect-ratio:4/3}
+
   .brand img{height:64px}
   .svc{border-right:0;border-bottom:1px solid var(--line)}
   .svc:last-child{border-bottom:0}
@@ -276,6 +278,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       </ol>
       <p class="note">Test figures and photos of the comparison to be added once the shop confirms the numbers.</p>
     </div>
+    <div class="stack">
+    <figure class="slipfig"><img src="slip.jpg" alt="A Crawford Machine oil well slip with serrated gripping teeth, next to a ruler showing it is about 2.5 inches wide" width="969" height="726"><figcaption>A Crawford slip after heat treatment. Serrated face grips the tubing; the body carries the load.</figcaption></figure>
     <dl class="spec">
       <div class="title">Product · slips &amp; reins</div>
       <dt>Use</dt><dd>Oil &amp; gas wells, Appalachian Basin and beyond</dd>
@@ -285,6 +289,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <dt>Lead time</dt><dd><span class="ph">[stock / X days]</span></dd>
       <dt>Order</dt><dd>Call <a class="phone" href="tel:+18148273427">814-827-3427</a></dd>
     </dl>
+    </div>
   </div>
 </section>
 
@@ -322,13 +327,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   <div class="wrap stack" style="gap:36px">
     <div class="stack" style="gap:12px">
       <div class="eyebrow">From the shop floor</div>
-      <h2>Fabrication, start to finish</h2>
-      <p>A welded structural steel frame, built from cut stock to a finished, squared assembly. The same hands that machine the parts weld the fabrication.</p>
+      <h2>Machining and fabrication, start to finish</h2>
+      <p>Welded frames, custom machine bases, bored plate, angle cuts. The same hands that machine the parts weld the fabrication.</p>
     </div>
     <div class="gallery">
-      <figure><img src="fab-welding.jpg" alt="Welding a large steel frame on the shop floor with a Thermal Arc welder in the foreground" width="1400" height="1050" loading="lazy"><figcaption>Tacking and welding the frame</figcaption></figure>
-      <figure><img src="fab-frame.jpg" alt="Finished welded steel frame with drilled mounting holes" width="1050" height="1400" loading="lazy"><figcaption>Finished frame, ready for mounting hardware</figcaption></figure>
-      <figure><img src="mill.jpg" alt="End mill cutting a slot in a long steel bar" width="1200" height="900" loading="lazy"><figcaption>Slotting bar stock on the mill</figcaption></figure>
+      <figure><img src="fab-welding.jpg" alt="Welding a large steel frame on the shop floor with a Thermal Arc welder in the foreground" width="1400" height="1050" loading="lazy"><figcaption>Tacking and welding a structural frame</figcaption></figure>
+      <figure><img src="fab-frame.jpg" alt="Finished welded steel frame with drilled mounting holes" width="1400" height="1050" loading="lazy"><figcaption>Finished frame, squared and drilled</figcaption></figure>
+      <figure><img src="fab-machine-base.jpg" alt="Painted green steel machine base with a machined shaft and bearing assembly mounted on top" width="969" height="726" loading="lazy"><figcaption>Custom machine base with turned shaft and bearing</figcaption></figure>
+      <figure><img src="mill-boring.jpg" alt="Annular cutter boring a 2.5 inch hole through steel plate on the mill" width="969" height="726" loading="lazy"><figcaption>Boring a 2½" hole through plate</figcaption></figure>
+      <figure><img src="mill-angle.jpg" alt="Bridgeport mill with head tilted, cutting an angled edge on a steel plate in a vise" width="969" height="726" loading="lazy"><figcaption>Angle cut on the Bridgeport, head tilted</figcaption></figure>
+      <figure><img src="mill.jpg" alt="End mill cutting a slot in a long steel bar" width="1200" height="900" loading="lazy"><figcaption>Slotting bar stock</figcaption></figure>
     </div>
   </div>
 </section>
