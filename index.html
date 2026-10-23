@@ -129,6 +129,14 @@ td.m{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:14px}
 .faq details[open] summary::after{content:"–"}
 .faq p{margin-top:8px;color:var(--ink-2)}
 
+/* shop notes */
+.notes{background:var(--bg-2)}
+.notelist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.notelist li{border-bottom:1px solid var(--line);padding:14px 0}
+.notelist a{font-family:var(--display);font-size:24px;font-weight:600;text-transform:uppercase;letter-spacing:.02em;text-decoration:none}
+.notelist a:hover,.notelist a:focus-visible{color:var(--accent)}
+.more{font-weight:600;color:var(--accent);text-decoration:none}
+
 /* quote form */
 .rfq{background:var(--steel);color:var(--steel-fg)}
 .rfq .grid2{grid-template-columns:1fr 1.4fr}
@@ -197,6 +205,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <a href="#work">Our work</a>
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
+      <a href="/blog/">Blog</a>
       <a href="#quote">Request a quote</a>
     </nav>
   </div>
@@ -375,6 +384,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <details><summary>Do you weld and repair, or only machine?</summary><p>We do all three. TIG (including aluminum), MIG, and stick welding, and we re-machine repaired parts in the same shop.</p></details>
       <details><summary>How do I get a quote?</summary><p>Call 814-827-3427 during shop hours, email crawfordmachine@gmail.com, or use the form below. Attach a print or photo if you have one.</p></details>
     </div>
+  </div>
+</section>
+
+<section class="band notes" id="notes">
+  <div class="wrap stack" style="gap:28px">
+    <div class="stack" style="gap:12px">
+      <div class="eyebrow">Shop notes</div>
+      <h2>How the work gets done</h2>
+      <p>Short reads on CNC machining, fabrication, reverse engineering, and heat treating.</p>
+    </div>
+    <ul class="notelist">
+      <li><a href="/blog/fusion-360-cam-toolpaths-cnc-machining/">From Fusion 360 model to real part: how we program CNC toolpaths</a></li>
+      <li><a href="/blog/what-is-metal-fabrication/">What is metal fabrication, and why does it matter?</a></li>
+      <li><a href="/blog/reverse-engineering-replacement-parts/">Need a replacement part you can't find? How we reverse engineer it</a></li>
+      <li><a href="/blog/what-is-heat-treating/">What is heat treating, and why does it matter?</a></li>
+    </ul>
+    <p><a class="more" href="/blog/">All shop notes →</a></p>
   </div>
 </section>
 

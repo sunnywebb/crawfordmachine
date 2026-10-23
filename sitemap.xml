@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://crawfordmachine.com/</loc><lastmod>2026-10-20</lastmod></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://crawfordmachine.com/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://crawfordmachine.com/blog/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://crawfordmachine.com/blog/fusion-360-cam-toolpaths-cnc-machining/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://crawfordmachine.com/blog/what-is-metal-fabrication/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://crawfordmachine.com/blog/reverse-engineering-replacement-parts/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://crawfordmachine.com/blog/what-is-heat-treating/</loc><lastmod>2026-10-23</lastmod></url>
+</urlset>
